@@ -44,7 +44,9 @@
 
 ## 📸 Preview
 
-![Dashboard Mockup](assets/mockup.png)
+![Dashboard Mockup](assets/Screenshot 2026-03-31 170910.png)
+![Dashboard Mockup](assets/Screenshot 2026-03-31 172153.png)  
+![Dashboard Mockup](assets/Screenshot 2026-03-31 172229.png)
 
 ---
 
