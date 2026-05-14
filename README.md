@@ -44,9 +44,29 @@
 
 ## 📸 Preview
 
-![Dashboard Mockup](assets/Screenshot 2026-03-31 170910.png)
-![Dashboard Mockup](assets/Screenshot 2026-03-31 172153.png)  
-![Dashboard Mockup](assets/Screenshot 2026-03-31 172229.png)
+<p align="center">
+  <img src="assets/Screenshot 2026-03-31 170910.png" width="100%" alt="Landing Page">
+  <br>
+  <em>Next-generation Threat Intelligence Dashboard</em>
+</p>
+
+<br>
+
+<table align="center">
+  <tr>
+    <td align="center" width="50%">
+      <img src="assets/Screenshot 2026-03-31 172153.png" width="100%" alt="App Analysis">
+      <br>
+      <strong>Detailed Application Analysis</strong>
+    </td>
+    <td align="center" width="50%">
+      <img src="assets/Screenshot 2026-03-31 172229.png" width="100%" alt="Search Results">
+      <br>
+      <strong>Look-alike Risk Assessment</strong>
+    </td>
+  </tr>
+</table>
+
 
 ---
 
