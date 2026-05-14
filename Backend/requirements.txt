@@ -1,0 +1,10 @@
+# Backend Dependencies
+fastapi
+uvicorn[standard]
+httpx
+python-dotenv
+ddgs
+requests
+google-play-scraper
+rapidfuzz
+playwright

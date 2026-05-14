@@ -1,0 +1,39 @@
+# --- Dependencies & Build ---
+node_modules/
+.next/
+out/
+build/
+dist/
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+.venv/
+pip-log.txt
+.pytest_cache/
+
+# --- Environment & Secrets ---
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+
+# --- IDE & Editors ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- System Files ---
+.DS_Store
+Thumbs.db
+
+# --- Project Specific Data (Optional) ---
+*.log
+**/koodous_results.json

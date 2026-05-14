@@ -1,0 +1,41 @@
+services:
+  backend:
+    build:
+      context: ./Backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./Backend:/app
+    env_file:
+      - ./Backend/.env
+    environment:
+      - PLAYWRIGHT_WS_ENDPOINT=ws://browser:3000/chromium
+    depends_on:
+      - browser
+
+  browser:
+    image: browserless/chrome:latest
+    ports:
+      - "3001:3000"
+    environment:
+      - MAX_CONCURRENT_SESSIONS=10
+      - DEBUG=
+    restart: always
+
+  frontend:
+    build:
+      context: ./Frontend/look-alike
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./Frontend/look-alike:/app
+      # Exclude node_modules from volume mapping to use the ones inside container
+      - /app/node_modules
+    env_file:
+      - ./Frontend/look-alike/.env
+    environment:
+      - NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL:-http://localhost:8000}
+    depends_on:
+      - backend
